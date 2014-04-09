@@ -51,7 +51,7 @@
             <?php endif; ?>
             <?php if ($site_slogan): ?>
               <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
-            <?php endif; ?>            
+            <?php endif; ?>
           </div>
         </div>
       </section>
@@ -147,6 +147,7 @@
         <?php endif; ?>
 
         <?php print render($page['content']); ?>
+        <div class="fb-like" data-href="http://pavel-nemzorov.ru" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
       </div>
       <!--/.main region -->
 
