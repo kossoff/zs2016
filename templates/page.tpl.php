@@ -149,6 +149,10 @@
         <?php print render($page['content']); ?>
         <div class="fb-like" data-href="http://pavel-nemzorov.ru" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
         <div class="g-plusone" data-size="medium"></div>
+        <div id="vk_like"></div>
+        <script type="text/javascript">
+        VK.Widgets.Like("vk_like", {type: "button", height: 18});
+        </script>
       </div>
       <!--/.main region -->
 
