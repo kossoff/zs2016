@@ -116,3 +116,114 @@
 
 // Older IE support
 // @import "vendor/ie";
+
+
+// http://compass-style.org/examples/compass/css3/text_shadow/
+$default-text-shadow-color: rgba($l-black, 0.6);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 1px;
+
+$footer-height: 100px;
+
+h1#site-name,
+#site-name-title {
+//   @include single-text-shadow;
+
+   font-size: 2.75em;
+   line-height: 1.4;
+   margin-bottom: 0;
+   text-align: center;
+
+   strong {
+      font-weight: 300;
+   }
+}
+
+h2.site-slogan {
+   font-size: 1.333em;
+   text-align: center;
+}
+
+header {
+   background: $l-lightyellow;
+   margin-bottom: 1em;
+
+
+   #main-menu-wrap {
+      background: lighten($l-lightyellow, 1%);
+
+      ul#main-menu-links {
+         margin-top: 1em;
+
+         letter-spacing: .1em;
+         text-transform: uppercase;
+      }
+   }
+}
+
+#prev,
+#next {
+   background: white;
+   background-color: rgba(255, 255, 255, 0.7);
+   border: 1px solid #ccc;
+   top: 75%;
+   cursor: pointer;
+   position: fixed;
+   padding: 20px 10px;
+   z-index: 1;
+}
+
+#prev {
+   left: 10px;
+}
+
+#next {
+   right: 10px;
+}
+
+footer {
+   background: $l-lightgrey;
+   padding-top: 1em;
+}
+
+p {
+   font-weight: 300;
+}
+
+/*
+   Sticky Footer Solution
+   by Steve Hatcher
+   http://stever.ca
+   http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+.page {min-height: 100%;}
+
+.wrapper-main {
+   overflow:auto;
+   padding-bottom: $footer-height;
+}  /* must be same height as the footer */
+
+footer {
+   position: relative;
+   margin-top: -$footer-height; /* negative value of footer height */
+   height: $footer-height;
+   clear:both;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+   content:"";
+   height:100%;
+   float:left;
+   width:0;
+   margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
