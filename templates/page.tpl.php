@@ -27,6 +27,9 @@
             +7&nbsp;(921)&nbsp;403-11-97
           </a>
         </div>
+        <div class="mobile-menu right hide-for-large-up">
+          <a href="#" data-reveal-id="mobile-menu"><i class="fa fa-bars"></i></a>
+        </div>
       </section>
 
     </header>
