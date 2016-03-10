@@ -29,7 +29,6 @@
 
 // Core
 // The following imports bootstrap the theme.
-// You may comment out bourbon if you don't want to use its library of mixins.
 // The theme will have compilation errors if Foundation is not imported.
 
 // Global Zurb Foundation variable overrides.
@@ -77,9 +76,6 @@
 @import "../../zurb_foundation/scss/foundation/components/offcanvas";
 @import "../../zurb_foundation/scss/foundation/components/visibility";
 
-// Comment out this import if you don't want to use Bourbon, a replacement for Compass mixins.
-@import "bourbon";
-
 // Import our mixins early so they can be used by other partials.
 // Optional.
 //@import "base/mixins";
@@ -107,6 +103,7 @@
 // Modules
 // @import "modules/block";
 // @import "modules/button";
+// @import "modules/back_to_top";
 
 // States
 // @import "states/collapse";
@@ -117,113 +114,137 @@
 // Older IE support
 // @import "vendor/ie";
 
+@import "../fonts/raleway/ralewayc.css";
 
-// http://compass-style.org/examples/compass/css3/text_shadow/
-$default-text-shadow-color: rgba($l-black, 0.6);
-$default-text-shadow-blur: 5px;
-$default-text-shadow-v-offset: 1px;
+.top-black-menu {
+  background: rgba(0,0,0, .5);
+  height: 45px;
+  position: fixed;
+  padding: 0 1rem;
+  width: 100%;
+  z-index:1;
 
-$footer-height: 100px;
+  .menu-center {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 100%;
 
-h1#site-name,
-#site-name-title {
-//   @include single-text-shadow;
+    ul#main-menu {
+      margin: 0;
 
-   font-size: 2.75em;
-   line-height: 1.4;
-   margin-bottom: 0;
-   text-align: center;
+      li {
+        a {
+          font-size: rem-calc(16);
+          padding: 0 1rem;
 
-   strong {
-      font-weight: 300;
-   }
-}
-
-h2.site-slogan {
-   font-size: 1.333em;
-   text-align: center;
-}
-
-header {
-   background: $l-lightyellow;
-   margin-bottom: 1em;
-
-
-   #main-menu-wrap {
-      background: lighten($l-lightyellow, 1%);
-
-      ul#main-menu-links {
-         margin-top: 1em;
-
-         letter-spacing: .1em;
-         text-transform: uppercase;
+          &.active {
+            background: rgba(0,0,0, .5);
+          }
+        }
       }
-   }
-}
+    }
+  }
 
-#prev,
-#next {
-   background: white;
-   background-color: rgba(255, 255, 255, 0.7);
-   border: 1px solid #ccc;
-   top: 75%;
-   cursor: pointer;
-   position: fixed;
-   padding: 20px 10px;
-   z-index: 1;
-}
+  ul#main-menu li,
+  .site-name h1,
+  .phone,
+  .mobile-menu {
+    font-size: rem-calc(22);
+    margin: 0;
+    position: relative;
+    z-index:10;
 
-#prev {
-   left: 10px;
-}
+    a {
+      color: $white;
+      text-transform: uppercase;
+      display: table-cell;
+      height:45px;
+      vertical-align: middle
+    }
+  }
 
-#next {
-   right: 10px;
+  .phone {
+    font-family: $header-font-family;
+  }
 }
 
 footer {
-   background: $l-lightgrey;
-   padding-top: 1em;
+  background: rgba(0,0,0, .7);
+  color: darken($white, 50%);
+  // font-size: rem-calc(14);
+  padding-top: 3rem;
+
+  a {
+    color: darken($white, 25%);
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
-p {
-   font-weight: 300;
+h1, h2, h3, h4, h5, h6 {
+  a {
+    color: $header-font-color;
+    border-bottom: 1px dotted $header-font-color;
+  }
+}
+ul.grid-masonry {
+  margin-left: 0;
 }
 
-/*
-   Sticky Footer Solution
-   by Steve Hatcher
-   http://stever.ca
-   http://www.cssstickyfooter.com
-*/
-
-* {margin:0;padding:0;}
-
-/* must declare 0 margins on everything, also for main layout components use padding, not
-vertical margins (top and bottom) to add spacing, else those margins get added to total height
-and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
-
-html, body {height: 100%;}
-
-.page {min-height: 100%;}
-
-.wrapper-main {
-   overflow:auto;
-   padding-bottom: $footer-height;
-}  /* must be same height as the footer */
-
-footer {
-   position: relative;
-   margin-top: -$footer-height; /* negative value of footer height */
-   height: $footer-height;
-   clear:both;
+.inline-list > li.grid-masonry-item {
+  margin-left: 0;
+  margin-bottom: 10px;
 }
 
-/*Opera Fix*/
-body:before {/* thanks to Maleika (Kohoutec)*/
-   content:"";
-   height:100%;
-   float:left;
-   width:0;
-   margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+.view-display-id-block_2 h3 {
+  max-width: 370px;
+}
+
+h1#page-title {
+  text-align: center;
+}
+
+.panel-pane {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  .wide & {
+    margin: 0;
+  }
+
+  .pane-title {
+    text-align: center;
+  }
+}
+
+body.not-front main {
+  padding-top: 50px;
+
+}
+
+.cover-orbit li {
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel {
+  display: block;
+  position: relative;
+}
+
+.clearing-blackout {
+  .carousel {
+    display: none;
+  }
+
+  .visible-img {
+    height: 100% !important;
+  }
+}
+
+.reveal-modal {
+  z-index: 1010;
 }
