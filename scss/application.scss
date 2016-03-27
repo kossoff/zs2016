@@ -138,23 +138,46 @@
   z-index: 1010;
 }
 
+.top-black-menu {
+  background: rgba(0,0,0, .85);
+  height: 45px;
+  position: fixed;
+  padding: 0 1rem;
+  width: 100%;
+  z-index:1;
+
+  .site-name h1,
+  .mobile-menu {
+    font-size: rem-calc(22);
+    margin: 0;
+    position: relative;
+    z-index:10;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+      display: table-cell;
+      height:45px;
+      vertical-align: middle
+    }
+  }
+}
+
+ul.main-menu {
+  li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &.active:hover {
+      color: $white;
+    }
+  }
+}
+
 .sidebar {
   position: fixed;
   width: 300px;
   padding-right: .9375rem;
-
-  .side-nav li {
-    a{
-      &:not(.button) {
-          text-transform: uppercase;
-          letter-spacing: 1px;
-      }
-
-      &.active:hover {
-        color: $white;
-      }
-    }
-  }
 }
 
 .main {

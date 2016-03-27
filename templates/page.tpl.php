@@ -1,37 +1,21 @@
 <!--.page -->
 <div role="document" class="page">
-
-  <!--.l-header -->
-  <!-- <header role="banner">
-    <section class="top-black-menu">
+  <header role="banner">
+    <section class="top-black-menu show-for-small">
       <div class="site-name left">
         <h1>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-            <i class="fa fa-camera-retro"></i>&nbsp;Павел Немзоров
+            <?php print $linked_site_name; ?>
           </a>
         </h1>
       </div>
-      <div class="menu-center">
-        <?php
-          print theme('links__system_main_menu',
-            array(
-              'links' => $main_menu,
-              'attributes' => array(
-                'id' => 'main-menu',
-                'class' => array('links', 'inline', 'show-for-large-up'))));
-        ?>
-      </div>
-      <div class="phone right show-for-large-up">
-        <a href="tel:+79214031197">
-          +7&nbsp;(921)&nbsp;403-11-97
-        </a>
-      </div>
+
       <div class="mobile-menu right hide-for-large-up">
         <a href="#" data-reveal-id="mobile-menu"><i class="fa fa-bars"></i></a>
       </div>
     </section>
 
-  </header> -->
+  </header>
   <!--/.l-header -->
 
   <!--.l-main -->
@@ -45,7 +29,7 @@
               'links' => $main_menu,
               'attributes' => array(
                 'id' => 'main-menu',
-                'class' => array('side-nav'))));
+                'class' => array('main-menu', 'side-nav'))));
         ?>
 
         <div class="icon-bar four-up">
@@ -151,14 +135,31 @@
 <!--/.page -->
 
 <div id="mobile-menu" class="reveal-modal" data-reveal role="dialog">
-  <div class="lead">Zaplay Studio</div>
-  <hr />
+  <div class="text-center">
+    <a href="/"><img alt="Zaplay Studio" src="/<?php print path_to_theme(); ?>/logo.png" /></a>
+  </div>
+
   <?php
   print theme('links__system_main_menu',
     array(
       'links' => $main_menu,
       'attributes' => array(
-        'class' => array('no-bullet'))));
+        'class' => array('main-menu','no-bullet', 'mobile-menu', 'side-nav'))));
   ?>
+
+  <div class="icon-bar four-up">
+    <a class="item" href="https://vk.com/pavelphoto">
+      <i class="fa fa-vk fa-2x"></i>
+    </a>
+    <a class="item" href="https://www.facebook.com/photopavel">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    <a class="item" href="https://vk.com/pavelphoto">
+      <i class="fa fa-instagram fa-2x"></i>
+    </a>
+    <a class="item" href="https://vk.com/pavelphoto">
+      <i class="fa fa-vimeo fa-2x"></i>
+    </a>
+  </div>
   <a class="close-reveal-modal">&times;</a>
 </div>
