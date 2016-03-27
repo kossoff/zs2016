@@ -114,117 +114,6 @@
 // Older IE support
 // @import "vendor/ie";
 
-@import "../fonts/raleway/ralewayc.css";
-
-.top-black-menu {
-  background: rgba(0,0,0, .5);
-  height: 45px;
-  position: fixed;
-  padding: 0 1rem;
-  width: 100%;
-  z-index:1;
-
-  .menu-center {
-    position: absolute;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-
-    ul#main-menu {
-      margin: 0;
-
-      li {
-        a {
-          font-size: rem-calc(16);
-          padding: 0 1rem;
-
-          &.active {
-            background: rgba(0,0,0, .5);
-          }
-        }
-      }
-    }
-  }
-
-  ul#main-menu li,
-  .site-name h1,
-  .phone,
-  .mobile-menu {
-    font-size: rem-calc(22);
-    margin: 0;
-    position: relative;
-    z-index:10;
-
-    a {
-      color: $white;
-      text-transform: uppercase;
-      display: table-cell;
-      height:45px;
-      vertical-align: middle
-    }
-  }
-
-  .phone {
-    font-family: $header-font-family;
-  }
-}
-
-footer {
-  background: rgba(0,0,0, .7);
-  color: darken($white, 50%);
-  // font-size: rem-calc(14);
-  padding-top: 3rem;
-
-  a {
-    color: darken($white, 25%);
-
-    &:hover {
-      color: $white;
-    }
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  a {
-    color: $header-font-color;
-    border-bottom: 1px dotted $header-font-color;
-  }
-}
-ul.grid-masonry {
-  margin-left: 0;
-}
-
-.inline-list > li.grid-masonry-item {
-  margin-left: 0;
-  margin-bottom: 10px;
-}
-
-.view-display-id-block_2 h3 {
-  max-width: 370px;
-}
-
-h1#page-title {
-  text-align: center;
-}
-
-.panel-pane {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-
-  .wide & {
-    margin: 0;
-  }
-
-  .pane-title {
-    text-align: center;
-  }
-}
-
-body.not-front main {
-  padding-top: 50px;
-
-}
-
 .cover-orbit li {
   background-size: cover;
   background-position: center center;
@@ -247,4 +136,48 @@ body.not-front main {
 
 .reveal-modal {
   z-index: 1010;
+}
+
+.sidebar {
+  position: fixed;
+  width: 300px;
+  padding-right: .9375rem;
+
+  .side-nav li {
+    a{
+      &:not(.button) {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+      }
+
+      &.active:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+.main {
+  margin-left: 300px;
+}
+
+body {
+  &.not-front .main {
+    margin-top: 60px;
+  }
+}
+
+ul.grid-masonry {
+  margin-left: 0;
+
+  li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media #{$small-only} {
+  .main {
+    margin-left: 0;
+  }
 }

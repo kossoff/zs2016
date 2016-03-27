@@ -95,25 +95,25 @@ $font-family-sans-serif: "PT Sans" ,"Helvetica Neue", Helvetica, Roboto, Arial, 
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -713,13 +713,13 @@ $paragraph-margin-bottom: 1.3rem; //rem-calc(20);
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to style the icon-bar and items
-// $icon-bar-bg: $oil;
-// $icon-bar-font-color: $white;
-// $icon-bar-font-color-hover: $icon-bar-font-color;
+$icon-bar-bg: $white; //$oil;
+$icon-bar-font-color: $black; // $white;
+$icon-bar-font-color-hover: $white; //$icon-bar-font-color;
 // $icon-bar-font-size: 1rem;
-// $icon-bar-hover-color: $primary-color;
-// $icon-bar-icon-color: $white;
-// $icon-bar-icon-color-hover: $icon-bar-icon-color;
+$icon-bar-hover-color: $black; //$primary-color;
+$icon-bar-icon-color: $black; //$white;
+$icon-bar-icon-color-hover: $white; //$icon-bar-icon-color;
 // $icon-bar-icon-size: 1.875rem;
 // $icon-bar-image-width: 1.875rem;
 // $icon-bar-image-height: 1.875rem;
@@ -1173,10 +1173,10 @@ $paragraph-margin-bottom: 1.3rem; //rem-calc(20);
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
+$side-nav-link-color: $black; //$primary-color;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-link-bg-hover: hsla(0, 0, 0, .025);
+$side-nav-link-color-hover: $white; //scale-color($side-nav-link-color, $lightness: 30%);
+$side-nav-link-bg-hover: $black; //hsla(0, 0, 0, .025);
 // $side-nav-link-margin: 0;
 // $side-nav-link-padding: rem-calc(7 14);
 // $side-nav-font-size: rem-calc(14);

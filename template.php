@@ -201,7 +201,7 @@ function THEMENAME_preprocess_views_view_fields(&$variables) {
 //  }
 //}
 
-function pn2016_prevnext($nid) {
+function zs2016_prevnext($nid) {
   $prev = db_query("SELECT nid, title FROM {node} WHERE nid < :nid AND type != 'page' AND status = 1 ORDER BY nid DESC LIMIT 1", array(':nid' => $nid));
   $next = db_query("SELECT nid, title FROM {node} WHERE nid > :nid AND type != 'page' AND status = 1 ORDER BY nid ASC LIMIT 1", array(':nid' => $nid));
 

@@ -4,7 +4,7 @@
  * Implements hook_panels_layouts()
  */
 
-function pn2016_wide_slider_panels_layouts() {
+function zs2016_wide_slider_panels_layouts() {
   $items['wide_slider'] = array (
     'title'     => t('Wide Slider: 1 column row'),
     'category'  => t('Foundation: 1'),
