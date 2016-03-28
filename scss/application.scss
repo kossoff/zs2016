@@ -180,13 +180,13 @@ ul.main-menu {
   padding-right: .9375rem;
 }
 
-.main {
-  margin-left: 300px;
-}
-
 body {
+  .main {
+    margin-left: 300px;
+  }
+
   &.not-front .main {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 
