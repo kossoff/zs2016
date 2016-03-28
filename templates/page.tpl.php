@@ -32,24 +32,25 @@
                 'class' => array('main-menu', 'side-nav'))));
         ?>
 
-        <div class="icon-bar four-up">
-          <a class="item" href="https://vk.com/pavelphoto">
-            <i class="fa fa-vk fa-2x"></i>
-          </a>
-          <a class="item" href="https://www.facebook.com/photopavel">
-            <i class="fa fa-facebook fa-2x"></i>
-          </a>
-          <a class="item" href="https://vk.com/pavelphoto">
-            <i class="fa fa-instagram fa-2x"></i>
-          </a>
-          <a class="item" href="https://vk.com/pavelphoto">
-            <i class="fa fa-vimeo fa-2x"></i>
-          </a>
-        </div>
+      <div class="icon-bar four-up">
+        <a class="item" href="https://vk.com/zaplay">
+          <i class="fa fa-vk fa-2x"></i>
+        </a>
+        <a class="item" href="https://www.facebook.com/zaplay">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a class="item" href="http://instagram.com/zaplay_studio">
+          <i class="fa fa-instagram fa-2x"></i>
+        </a>
+        <a class="item" href="https://vimeo.com/zaplay">
+          <i class="fa fa-vimeo fa-2x"></i>
+        </a>
+      </div>
       </div>
 
     <!-- .l-main region -->
     <div class="main">
+      <div class="columns">
       <?php if (!empty($page['featured'])): ?>
         <!--.l-featured -->
         <section class="l-featured row">
@@ -105,7 +106,6 @@
       <?php endif; ?>
 
       <?php print render($page['content']); ?>
-
       <!--.l-footer -->
       <footer role="contentinfo">
         <hr />
@@ -125,7 +125,7 @@
         </div>
       </footer>
       <!--/.l-footer -->
-    </div></div>
+    </div></div></div>
     <!--/.l-main region -->
   </main>
   <!--/.l-main -->
@@ -148,16 +148,16 @@
   ?>
 
   <div class="icon-bar four-up">
-    <a class="item" href="https://vk.com/pavelphoto">
+    <a class="item" href="https://vk.com/zaplay">
       <i class="fa fa-vk fa-2x"></i>
     </a>
-    <a class="item" href="https://www.facebook.com/photopavel">
+    <a class="item" href="https://www.facebook.com/zaplay">
       <i class="fa fa-facebook fa-2x"></i>
     </a>
-    <a class="item" href="https://vk.com/pavelphoto">
+    <a class="item" href="http://instagram.com/zaplay_studio">
       <i class="fa fa-instagram fa-2x"></i>
     </a>
-    <a class="item" href="https://vk.com/pavelphoto">
+    <a class="item" href="https://vimeo.com/zaplay">
       <i class="fa fa-vimeo fa-2x"></i>
     </a>
   </div>
