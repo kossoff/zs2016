@@ -22,7 +22,7 @@
   <main role="main" class="l-main">
     <div class="large-12 columns">
       <div class="sidebar hide-for-small">
-        <a href="/"><img src="/<?php print path_to_theme(); ?>/logo.png" /></a>
+        <a href="/"><img class="logo" src="/<?php print path_to_theme(); ?>/logo.png" /></a>
         <?php
           print theme('links__system_main_menu',
             array(
@@ -34,16 +34,16 @@
 
       <div class="icon-bar four-up">
         <a class="item" href="https://vk.com/zaplay">
-          <i class="fa fa-vk fa-2x"></i>
+          <i class="fa fa-vk"></i>
         </a>
         <a class="item" href="https://www.facebook.com/zaplay">
-          <i class="fa fa-facebook fa-2x"></i>
+          <i class="fa fa-facebook"></i>
         </a>
         <a class="item" href="http://instagram.com/zaplay_studio">
-          <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-instagram"></i>
         </a>
         <a class="item" href="https://vimeo.com/zaplay">
-          <i class="fa fa-vimeo fa-2x"></i>
+          <i class="fa fa-vimeo"></i>
         </a>
       </div>
       </div>

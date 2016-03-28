@@ -176,13 +176,21 @@ ul.main-menu {
 
 .sidebar {
   position: fixed;
-  width: 300px;
+  width: 275px;
   padding-right: .9375rem;
+
+  .logo {
+    margin: 30px 0 20px;
+  }
+
+  .icon-bar > * i {
+    font-size: rem-calc(24);
+  }
 }
 
 body {
   .main {
-    margin-left: 300px;
+    margin-left: 260px;
   }
 
   &.not-front .main {
