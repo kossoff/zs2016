@@ -191,6 +191,10 @@ ul.main-menu {
 body {
   .main {
     margin-left: 260px;
+
+    .wide {
+      padding-top: 2rem;
+    }
   }
 
   &.not-front .main {
