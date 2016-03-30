@@ -14,22 +14,22 @@ var base_theme_path = '../zurb_foundation';
 // array of Zurb Foundation javascript components to include.
 var jsFoundation = [
     base_theme_path + '/js/foundation/foundation.js',
-    base_theme_path + '/js/foundation/foundation.abide.js',
-    base_theme_path + '/js/foundation/foundation.accordion.js',
+    //base_theme_path + '/js/foundation/foundation.abide.js',
+    //base_theme_path + '/js/foundation/foundation.accordion.js',
     base_theme_path + '/js/foundation/foundation.alert.js',
     base_theme_path + '/js/foundation/foundation.clearing.js',
-    base_theme_path + '/js/foundation/foundation.dropdown.js',
-    base_theme_path + '/js/foundation/foundation.equalizer.js',
+    //base_theme_path + '/js/foundation/foundation.dropdown.js',
+    //base_theme_path + '/js/foundation/foundation.equalizer.js',
     base_theme_path + '/js/foundation/foundation.interchange.js',
-    base_theme_path + '/js/foundation/foundation.joyride.js',
-    base_theme_path + '/js/foundation/foundation.magellan.js',
-    base_theme_path + '/js/foundation/foundation.offcanvas.js',
-    base_theme_path + '/js/foundation/foundation.orbit.js',
+    //base_theme_path + '/js/foundation/foundation.joyride.js',
+    //base_theme_path + '/js/foundation/foundation.magellan.js',
+    //base_theme_path + '/js/foundation/foundation.offcanvas.js',
+    //base_theme_path + '/js/foundation/foundation.orbit.js',
     base_theme_path + '/js/foundation/foundation.reveal.js',
     base_theme_path + '/js/foundation/foundation.slider.js',
-    base_theme_path + '/js/foundation/foundation.tab.js',
-    base_theme_path + '/js/foundation/foundation.tooltip.js',
-    base_theme_path + '/js/foundation/foundation.topbar.js'
+    //base_theme_path + '/js/foundation/foundation.tab.js',
+    //base_theme_path + '/js/foundation/foundation.tooltip.js',
+    //base_theme_path + '/js/foundation/foundation.topbar.js'
 ];
 
 gulp.task('awesome_css', function () {
