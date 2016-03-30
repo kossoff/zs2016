@@ -33,16 +33,16 @@
         ?>
 
       <div class="icon-bar four-up">
-        <a class="item" href="https://vk.com/zaplay">
+        <a class="item" href="https://vk.com/zaplay" target="_blank">
           <i class="fa fa-vk"></i>
         </a>
-        <a class="item" href="https://www.facebook.com/zaplay">
+        <a class="item" href="https://www.facebook.com/zaplay" target="_blank">
           <i class="fa fa-facebook"></i>
         </a>
-        <a class="item" href="http://instagram.com/zaplay_studio">
+        <a class="item" href="http://instagram.com/zaplay_studio" target="_blank">
           <i class="fa fa-instagram"></i>
         </a>
-        <a class="item" href="https://vimeo.com/zaplay">
+        <a class="item" href="https://vimeo.com/zaplay" target="_blank">
           <i class="fa fa-vimeo"></i>
         </a>
       </div>
@@ -148,16 +148,16 @@
   ?>
 
   <div class="icon-bar four-up">
-    <a class="item" href="https://vk.com/zaplay">
+    <a class="item" href="https://vk.com/zaplay" target="_blank">
       <i class="fa fa-vk fa-2x"></i>
     </a>
-    <a class="item" href="https://www.facebook.com/zaplay">
+    <a class="item" href="https://www.facebook.com/zaplay" target="_blank">
       <i class="fa fa-facebook fa-2x"></i>
     </a>
-    <a class="item" href="http://instagram.com/zaplay_studio">
+    <a class="item" href="http://instagram.com/zaplay_studio" target="_blank">
       <i class="fa fa-instagram fa-2x"></i>
     </a>
-    <a class="item" href="https://vimeo.com/zaplay">
+    <a class="item" href="https://vimeo.com/zaplay" target="_blank">
       <i class="fa fa-vimeo fa-2x"></i>
     </a>
   </div>
