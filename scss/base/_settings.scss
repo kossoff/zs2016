@@ -714,11 +714,11 @@ $paragraph-margin-bottom: 1.3rem; //rem-calc(20);
 
 // We use these to style the icon-bar and items
 $icon-bar-bg: $white; //$oil;
-$icon-bar-font-color: $black; // $white;
+$icon-bar-font-color: $primary-color; // $white;
 $icon-bar-font-color-hover: $white; //$icon-bar-font-color;
 // $icon-bar-font-size: 1rem;
-$icon-bar-hover-color: $black; //$primary-color;
-$icon-bar-icon-color: $black; //$white;
+$icon-bar-hover-color: $primary-color; //$primary-color;
+$icon-bar-icon-color: $primary-color; //$white;
 $icon-bar-icon-color-hover: $white; //$icon-bar-icon-color;
 // $icon-bar-icon-size: 1.875rem;
 // $icon-bar-image-width: 1.875rem;
