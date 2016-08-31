@@ -1,4 +1,4 @@
-<?php drupal_add_js('https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', 'external'); ?>
+<?php drupal_add_js('https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', 'external'); ?>
 
 <?php print $wrapper_prefix; ?>
   <?php if (!empty($title)) : ?>
